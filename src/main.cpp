@@ -21,15 +21,15 @@ char lugar[]="Madrid-Estudio";//en la base de datos será "origen"
 /**************************************************************
       Host de la base de datos y datos de la WIFI
  **************************************************************/
-#define HOST sprintf(web,"URL/?valor1=%f&valor2=%f&valor3=%f&ubicacion=%s",temperatura,humedad,pila,lugar);
+#define HOST sprintf(web,"https://patriciocoronadocollado.000webhostapp.com/clima.php/?valor1=%f&valor2=%f&valor3=%f&ubicacion=%s",temperatura,humedad,pila,lugar);
 /**************************************************************
                     WIFI a utilizar
  **************************************************************/
 #ifdef __Pueblo
-  #define WIFI WiFiMulti.addAP("SSID2", "password2");
+  #define WIFI WiFiMulti.addAP("FX-991SP","Doniga_93");
 #endif
 #ifdef __Madrid
-  #define WIFI wifiMulti.addAP("SSID1", "password1");
+  #define WIFI wifiMulti.addAP("router_no_encontrado", "RoloTomasi8086");
 #endif
 /**************************************************************
             Tiempo en deepsleep
